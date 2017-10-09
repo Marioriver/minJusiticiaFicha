@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Tomas Acuña, ...">
+    <meta name="description" content="Ficha técnica situacional de los establecimientos penitenciarios">
+    <title>Ficha técnica situacional de los establecimientos penitenciarios</title>
+    <!-- Metadatos Link -->
+    <meta property="og:title" content="Instituto Nacional Penitenciario"/>
+    <!-- <meta property="og:url" content="#" /> -->
+    <meta property="og:image" content="img/pv.jpg" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-light bg-dark">
+      <a class="navbar-brand text-white" href="#">
+        <img src="img/minjus.png" width="250" height="30" class="d-inline-block align-top" alt="MinJus">
+      </a>
+    </nav>
+    
+    <progress value="0" id="progressBar">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+    
+    <div class="contenido col-md-12">
+      <div class="inicio">
+          <h2>Ficha técnica situacional de los establecimientos penitenciarios</h2>
+          <hr>
+        </div>
+      <form>
+        <!--Datos encabezado-->
+        <fieldset disabled>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="oregional">Oficina Regional</label>
+              <input type="text" class="form-control form-control-sm" id="oregional" placeholder="[Nombre Oficina Regional]">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="epenitenciario">Establecimiento Penitenciario</label>
+              <input type="text" class="form-control form-control-sm" id="epenitenciario" placeholder="[Nombre del Establecimiento Penitenciario]">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="fechaact">Fecha de actualización de datos</label>
+              <input type="date" class="form-control form-control-sm" id="fechaact" placeholder="DD/MM/AAAA">
+            </div>
+          </div>
+        </fieldset>
+        <hr>
+        <!--Datos Generales del penal-->
+        <div class="1datosgen" id="1datosgen">
+          <h4>I Datos Generales del Penal</h4><br>
+          <div class="1ubicacion">
+            <h5>1.1 Ubicación Geográfica</h5>
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Departamento">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Provincia">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control form-control-sm" placeholder="Dirección">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Zona:</label>
+              <div class="form-check form-check-inline col-md-4 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01zonadatosgen" value="Urbana"> Urbana
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01zonadatosgen" value="Urbana"> Rural
+                </label>
+              </div>                
+              <div class="form-group col-md-6">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control form-control-sm" placeholder="Resolución de creación">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control form-control-sm" placeholder="Régimen">
+              </div>
+            </div>
+          </div><br>
+          <div class="1iacargo">
+            <h5>1.2 Institución a cargo</h5>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Dirección y administración del penal:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01dirección" value="INPE"> INPE
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01dirección" value="PNP"> PNP
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Seguridad interna:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01sint" value="INPE"> INPE
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01sint" value="PNP"> PNP
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Seguridad externa:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01sext" value="INPE"> INPE
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="01sext" value="PNP"> PNP
+                </label>
+              </div>
+            </div>
+          </div><br>
+          <div class="1autdirec">
+            <h5>1.3 Autoridades directrices</h5>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Director">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Subdirector">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Jefe de seguridad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Alcaide 1">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Alcaide 2">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Alcaide 3">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="tel" class="form-control form-control-sm" placeholder="Teléfono Celular">
+              </div>
+            </div>
+          </div><br>
+          <div class="1distper">
+            <h5>1.4 Distribución de personal</h5>
+            <div class="form-row">
+              <label class="col-md-6 col-form-label text-secondary">Total RRHH</label>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Interna">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Externa">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-6 col-form-label text-secondary">Personal Administrativo</label>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Interna">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Externa">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-6 col-form-label text-secondary">Personal Tratamiento</label>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Interna">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Externa">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-6 col-form-label text-secondary">Personal Seguridad</label>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Interna">
+              </div>
+              <div class="form-group col-md-3">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Externa">
+              </div>
+            </div>
+          </div><br>
+          <div class="1pobpen">
+            <h5>1.5 Población penal</h5>
+            <div class="form-row justify-content-between">
+              <label class="col-md-2 col-form-label text-secondary">Capacidad del albergue</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary">Capacidad Total</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <label class="col-form-label text-secondary font-weight-bold">Fuerza pública:</label>
+            <div class="form-row justify-content-between ">
+              <label class="col-md-2 col-form-label text-secondary">Ejército Peruano</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary">Armada Peruana</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row justify-content-between ">
+              <label class="col-md-2 col-form-label text-secondary">Fuerza Aérea</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary">Policía Nacional</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <label class="col-form-label text-secondary font-weight-bold">Organismos públicos:</label>
+            <div class="form-row justify-content-between ">
+              <label class="col-md-2 col-form-label text-secondary">INPE</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary">Poder Judicial</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row justify-content-between ">
+              <label class="col-md-2 col-form-label text-secondary">Ministerio Público</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary">Gobierno Regional</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row justify-content-between ">
+              <label class="col-md-2 col-form-label text-secondary">Ministerio Público</label>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-2 col-form-label text-secondary"></label>
+              <div class="form-group col-md-2"></div>
+            </div>
+          </div><br>
+        </div>
+        <!--Infraestructura-->
+        <div class="2infrastruc">
+          <h4>II Infraestructura</h4><br>
+          <div class="2pabe">
+            <h5>2.1 Pabellones</h5>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <div class="form-group col-md-4">
+                <input type="text" class="form-control form-control-sm" placeholder="Pabellón">
+              </div>
+              <div class="form-group col-md-2">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+          </div><br>
+          <div class="2titul">
+            <h5>2.2 Titulación de la propiedad del penal</h5>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Inscrito en Registros Públicos:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02rgp" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02rgp" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Inscrito en Registros de SBN:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02regsbn" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02regsbn" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Local propio</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02locp" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02locp" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Local alquilado:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02localq" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02localq" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Por regularizar saneamiento:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02regs" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02regs" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Comisarías:</label>
+              <div class="form-check form-check-inline col-md-5 form-control-sm">
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02comis" value="Sí"> Sí
+                </label>
+                <label class="form-check-label col-md-5">
+                  <input class="form-check-input" type="radio" name="02comis" value="No"> No
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-5">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+          </div><br>
+          <div class="2area">
+            <h5>2.3 Área del terreno (Mts.²)</h5>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Área total:</label>
+              <div class="form-group col-md-5">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Área construída:</label>
+              <div class="form-group col-md-5">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Área por construir:</label>
+              <div class="form-group col-md-5">
+                <input type="number" name="quantity" min="0" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+          </div><br>
+          <div class="2antig">
+            <h5>2.4 Antigüedad</h5>
+            <div class="form-row">
+              <label class="col-md-5 col-form-label text-secondary">Fecha de construcción:</label>
+              <div class="form-group col-md-5">
+                <input type="date" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-5 col-form-label text-secondary">Fecha de inauguración:</label>
+              <div class="form-group col-md-5">
+                <input type="date" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+              <label class="col-md-5 col-form-label text-secondary">Fecha de funcionamiento:</label>
+              <div class="form-group col-md-5">
+                <input type="date" class="form-control form-control-sm" placeholder="Cantidad">
+              </div>
+            </div>
+          </div><br>
+          <div class="2tipconst">
+            <h5>2.5 Tipo de Construcción del E.P.</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Tipo:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="025tip" value="Concreto"> Concreto
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="025tip" value="Ladrillo"> Ladrillo
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="025tip" value="Adobe"> Adobe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="025tip" value="Quincha"> Quincha
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="025tip" value="Madera"> Madera
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Estado:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="025est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="025est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="025est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+          </div><br>
+          <div class="2mate">
+            <h5>2.6 Material predominante en las paredes de pabellones</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Tipo:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="026tip" value="Concreto"> Concreto
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="026tip" value="Ladrillo"> Ladrillo
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="026tip" value="Adobe"> Adobe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="026tip" value="Quincha"> Quincha
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="026tip" value="Madera"> Madera
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Estado:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="026est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="026est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="026est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+          </div><br>
+          <div class="2tech">
+            <h5>2.7 Material predominante en los techos de los pabellones</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Tipo:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="027tip" value="Aligerado con concreto"> Aligerado con concreto
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="027tip" value="Estructura de madera"> Estructura de madera
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="027tip" value="Caña con torta de barro"> Caña con torta de barro
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="027tip" value="Calamina"> Calamina
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="027tip" value="Eternit"> Eternit
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Estado:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="027est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="027est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="027est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+          </div><br>
+          <div class="2vent">
+            <h5>2.8 Material predominante de puertas y ventanas de los pabellones</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Tipo:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="028tip" value="Madera"> Madera
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="028tip" value="Fierro"> Fierro
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="checkbox" name="028tip" value="Aluminio"> Aluminio
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Estado:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="028est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="028est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="028est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+          </div><br>
+          <div class="2amb">
+            <h5>2.9 Ambientes que tienen el penal</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Venusterio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Adonisterio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-adonis" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-adonis" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-adonis-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-adonis-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-adonis-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Min clínica:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-mcli" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-mcli" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-mcli-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-mcli-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-mcli-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Sala para ott:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sott" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sott" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sott-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sott-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sott-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Sala judiciales:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sjud" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sjud" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sjud-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sjud-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sjud-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Sala abogados:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sabog" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sabog" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sabog-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sabog-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-sabog-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Talleres de trabajo:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ttrab" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ttrab" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ttrab-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ttrab-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ttrab-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Patio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-patio" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-patio" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-patio-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-patio-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-patio-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Lozas deportivas:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-lozadep" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-lozadep" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-lozadep-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-lozadep-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-lozadep-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Aulas de enseñanza:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-auens" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-auens" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-auens-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-auens-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-auens-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Cuna/Jardín:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cunjar" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cunjar" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cunjar-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cunjar-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cunjar-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Biblioteca:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-biblio" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-biblio" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-biblio-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-biblio-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-biblio-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Locutorio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-locu" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-locu" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-locu-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-locu-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-locu-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Auditorio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-audit" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-audit" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-audit-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-audit-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-audit-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Cocina:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cocin" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cocin" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cocin-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cocin-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-cocin-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Comedor:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Ambientes especiales:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ambesp" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ambesp" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ambesp-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-ambesp-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-comed-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Celdas unipersonales:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celuni" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celuni" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celuni-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celuni-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celuni-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Celdas bipersonales:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celbi" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celbi" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celbi-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celbi-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-celbi-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Dormitorios colectivos:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-dorcol" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-dorcol" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-dorcol-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-dorcol-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-dorcol-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <label class="col-md-2 col-form-label text-secondary">Otros:</label>
+              <div class="form-group col-md-8">
+                <input type="text" class="form-control form-control-sm" placeholder="Especifique">
+              </div>
+            </div>
+          </div><br>
+          <div class="2piso">
+            <h5>2.10 Material predominante el los pisos de los pabellones</h5>
+            <div class="form-row">
+              <label class=" col-md-2 col-form-label text-secondary">Venusterio:</label>
+              <div class="form-check form-check-inline col-md-10 form-control-sm">
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio" value="Existe"> Existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio" value="No existe"> No existe
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Bueno"> Bueno
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Regular"> Regular
+                </label>
+                <label class="form-check-label col-md-2">
+                  <input class="form-check-input" type="radio" name="029-venisterio-est" value="Malo"> Malo
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr><button onclick="alertaGuardar()" type="submit" class="btn btn-danger btn-lg btn-block">Enviar</button>
+      </form>      
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+  
+</html>
